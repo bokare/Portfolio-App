@@ -2,14 +2,14 @@
 import './Button.css'
 function Skill({ skill }) {
   return (
-    <div class="col-lg-4 col-md-6 col-12 text-center">
+    <div className="col-lg-4 col-md-6 col-12 text-center">
       <div
-        class="skill card d-flex flex-direction-column p-4 justify-content-around"
+        className="skill card d-flex flex-direction-column p-4 justify-content-around"
         style={{ minHeight: "300px" ,maxHeight:"300px" }}
       >
         <img
           src={skill.imgurl}
-          class="card-img-top"
+          className="card-img-top"
           alt={skill.title}
           style={{
             maxWidth: "120px",
@@ -19,8 +19,8 @@ function Skill({ skill }) {
           }}
         />
 
-        <h3 class="card-title my-2">{skill.title}</h3>
-        <p class="card-text ">{skill.desc}</p>
+        <h3 className="card-title my-2">{skill.title}</h3>
+        <p className="card-text ">{skill.desc}</p>
       </div>
     </div>
   );

@@ -14,17 +14,17 @@ function About() {
   };
 
   return (
-    <div class="card " style={imgStyle}>
+    <div className="card " style={imgStyle}>
       <img
         src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706510551/homebg.jpg"
-        class="card-img "
+        className="card-img "
         alt="Home Backgroung"
         style={{ height: "80vh", width: "100%", objectFit: "cover" }}
       />
-      <div class="card-img-overlay px-4 container mb-5">
-        <h1 class="card-title display-2 mt-5 mb-1"> I'm Developer</h1>
-        <h1 class="card-title display-2 mb-4">Vaibhav Bokare</h1>
-        <h3 class="card-text px-2 mb-5" style={{ textAlign: "justify" }}>
+      <div className="card-img-overlay px-4 container mb-5">
+        <h1 className="card-title display-2 mt-5 mb-1"> I'm Developer</h1>
+        <h1 className="card-title display-2 mb-4">Vaibhav Bokare</h1>
+        <h3 className="card-text px-2 mb-5" style={{ textAlign: "justify" }}>
           I am a future Software enthusiast engineer completed my graduation in
           2023. Passionate about coding and it's potential, i am eager to
           contribute my expertise to optimized operation through Programming

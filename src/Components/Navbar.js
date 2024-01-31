@@ -13,21 +13,21 @@ const Navbar = () => {
   const resumeUrl = process.env.PUBLIC_URL + "/" + resumeFileName;
   return (
     <nav
-      className="navbar navbar-expand-lg bg-body-tertiary "
+      className="navbar navbar-expand-lg bg-body-tertiary p-0 "
       data-bs-theme={`${theme}`}
-      style={{ fontSize: "1.2rem" }}
+      style={{ fontSize: "1.3rem" ,position:"sticky", width:"100%" ,top:"0" ,zIndex:"5" ,}}
     >
-      <div className="container-fluid">
+      <div className="container-fluid" style={{backgroundColor:""}}>
         <Link className="navbar-brand px-4" to="/">
           <img
             src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706381806/xxnnvbzwceaz8vdglkh9.jpg"
             alt="Bootstrap"
-            width="40"
-            height="30"
+            width="50"
+            height="40"
           />
           <span
-            className="font-monospace align-bottom m-1"
-            style={{ letterSpacing: "0.2em" }}
+            className="font-monospace align-middle m-1 px-2 "
+            style={{ letterSpacing: "0.3rem" ,fontSize:"1.3rem"  ,fontWeight:"600" ,color:""}}
           >
             PORTFOLIO
           </span>
@@ -46,29 +46,30 @@ const Navbar = () => {
         <div
           className="collapse navbar-collapse px-3"
           id="navbarSupportedContent"
+          style={{fontWeight:"400"}}
         >
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0m px-2 pt-2">
-            <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
+          <ul className="navbar-nav ms-auto  mb-lg-0m px-2 p-3">
+            <li className="nav-item" activeClassName="active">
+              <Link className="nav-link " aria-current="page" to="/">
                 Home
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" activeClassName="active">
               <Link className="nav-link" to="/education">
                 Education
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" activeClassName="active">
               <Link className="nav-link" to="/projects">
                 Projects
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" activeClassName="active">
               <Link className="nav-link" to="/achievements">
                 Achievements
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" activeClassName="active">
               <Link className="nav-link" to="/contacts">
                 Contacts
               </Link>

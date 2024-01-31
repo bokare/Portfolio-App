@@ -4,10 +4,10 @@ function Contacts() {
   return (
     <>
       <div className="">
-        <p className="display-1 container text-center my-5">Get In Touch</p>
+        <p className="display-1 container text-center my-5" style={{fontFamily: "Georgia"}}>Get In Touch</p>
         <p
           className="container text-justify my-5 px-5"
-          style={{ fontSize: "1.5rem", maxWidth: "1200px" }}
+          style={{ fontSize: "1.5rem", maxWidth: "1200px" ,}}
         >
           I am available on almost every social media. You can message me, I
           will reply within 24 hours. I can help you with Web Development.
@@ -18,7 +18,7 @@ function Contacts() {
               <a href="https://github.com/bokare" target="_blank"> 
               <img
                 src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706696673/samples/github.png"
-                class="h-7 mr-3 pb-3"
+                className="h-7 mr-3 pb-3"
                 alt="github"
                
               />
@@ -33,7 +33,7 @@ function Contacts() {
               <a href="https://www.linkedin.com/feed/?trk=404_page" target="_blank">
               <img
                 src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706696931/samples/linkedin.png"
-                class="h-7 mr-3 pb-3"
+                className="h-7 mr-3 pb-3"
                 alt="LimkedIn"
                 
               />
@@ -48,7 +48,7 @@ function Contacts() {
               <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FVaibhav_b_patil" target="_blank"> 
               <img
                 src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706697111/samples/twiter.png"
-                class="h-7 mr-3 pb-3"
+                className="h-7 mr-3 pb-3"
                 alt="Twitter"
                 style={{}}
               />{" "}
@@ -63,7 +63,7 @@ function Contacts() {
             <a href="mailto:bokarevk2001@gmail.com">
               <img
                 src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706697459/samples/logo%20gmail.png"
-                class="h-7 mr-3 pb-3"
+                className="h-7 mr-3 pb-3"
                 alt="gmail"
                 style={{}}
               />{" "}
@@ -77,11 +77,11 @@ function Contacts() {
           </div>
           <div>
             <div className="h3">
-              <i class="fa-solid fa-house px-2"></i> pune
+              <i className="fa-solid fa-house px-2"></i> pune
             </div>
             <h3 className="pb-3">
               <a href="mailto:bokarevk2001@gmail.com">
-                <i class="fa-regular fa-envelope px-2"></i>
+                <i className="fa-regular fa-envelope px-2"></i>
                 <p className="d-inline-block px-2"> bokarevk2001@gmail.com</p>
               </a>
             </h3>
@@ -94,7 +94,7 @@ function Contacts() {
           className="container my-5 d-flex gap-5 flex-wrap justify-content-around px-5"
           style={{ maxWidth: "1200px" }}
         >
-          <p className="align-self-center" style={{ fontSize: "2rem" }}>
+          <p className="align-self-center" style={{ fontSize: "2rem" ,fontFamily: "Georgia"}}>
             Let’s Work Together!
           </p>
           <div>
@@ -125,7 +125,7 @@ function Contacts() {
                 placeholder="YOUR MESSAGE"
                 resize="verticle"
               ></textarea>
-              <button class="send" type="submit">
+              <button className="send" type="submit">
                 Send
               </button>
             </form>

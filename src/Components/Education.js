@@ -5,15 +5,15 @@ function Education() {
         className="container flex-column justify-content-evenly my-5 pb-5 px-4"
         style={{ minHeight: "80vh", maxWidth: "900px" }}
       >
-        <h1 className="mb-5 text-center">Education</h1>
+        <h1 className="my-5 text-center py-3" style={{fontFamily: "Georgia"}}><span className="border-4 border-bottom">Education</span></h1>
         <div
-          class="accordion bg-danger-subtle text-emphasis-danger "
+          className="accordion bg-danger-subtle text-emphasis-danger "
           id="accordionPanelsStayOpenExample"
         >
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button p-3 d-block"
+                className="accordion-button p-3 d-block"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseOne"
@@ -36,9 +36,9 @@ function Education() {
             </h2>
             <div
               id="panelsStayOpen-collapseOne"
-              class="accordion-collapse collapse show"
+              className="accordion-collapse collapse show"
             >
-              <div class="accordion-body p-4">
+              <div className="accordion-body p-4">
                 <a
                   href="https://mescoe.mespune.org/"
                   target="_blank"
@@ -62,10 +62,10 @@ function Education() {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button collapsed p-3 d-block"
+                className="accordion-button collapsed p-3 d-block"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseTwo"
@@ -80,9 +80,9 @@ function Education() {
             </h2>
             <div
               id="panelsStayOpen-collapseTwo"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
             >
-              <div class="accordion-body py-5">
+              <div className="accordion-body py-5">
                 <a
                   href="https://ymnnanded.in/"
                   target="_blank"
@@ -96,10 +96,10 @@ function Education() {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button collapsed p-3 d-block"
+                className="accordion-button collapsed p-3 d-block"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseThree"
@@ -114,9 +114,9 @@ function Education() {
             </h2>
             <div
               id="panelsStayOpen-collapseThree"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
             >
-              <div class="accordion-body py-5">
+              <div className="accordion-body py-5">
                 <h5 style={{color: "#7B48A6" }}>Shahid Bhagatsingh High School Bajajngar, Sambhajinagar.</h5>
                 <p className="my-2 pt-2">
                   <h6>📍percentage : 90.00</h6>

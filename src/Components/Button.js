@@ -18,7 +18,7 @@ function Button({ text, to = "/contacts", target = "" }) {
         onMouseLeave={(e) => (e.target.style.backgroundColor = "#EC5B53")}
       >
         {text}
-        <i class="fas fa-chevron-right"></i>
+        <i className="fas fa-chevron-right"></i>
       </button>
     </Link>
   );

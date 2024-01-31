@@ -53,20 +53,6 @@ footer ul a{
     margin-top: 10px;
 }
 
-/* .foot-panel3{
-    background-color: #222f3d;
-    border-top: 0.5px solid white;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-} */
-
-/* .logo {
-    height: 50px;
-    width: 100px;
-} */
 
 .foot-panel4{
     background-color: #2B3035;
@@ -76,3 +62,7 @@ footer ul a{
     padding: 25px 10% ;
 }
 
+.foot-panel2::after {
+    content: "";
+    width: 350px;
+  }

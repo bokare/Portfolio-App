@@ -69,11 +69,11 @@ function Home() {
   return (
     <>
       <About />
-      <div class="skill-section container my-5  p-5">
-        <h1 className="mb-5" style={{ fontFamily: "Georgia" }}>
-          The Skills I Have
+      <div className="skill-section container my-5  p-5">
+        <h1 className="mb-5 pb-3 text-center" style={{ fontFamily: "Georgia" }}>
+          <span className="border-4 border-bottom">The Skills I Have</span>
         </h1>
-        <div class="row row-cols-1 row-cols-md-3 g-5">
+        <div className="row row-cols-1 row-cols-md-3 g-5">
           {skills.map((item) => (
             <Skill key={item.title} skill={item} />
           ))}
@@ -81,16 +81,18 @@ function Home() {
       </div>
 
       <div className="container px-5">
-        <h1 style={{fontFamily:"Georgia"}}>Strength</h1>
-        <div className=" d-flex gap-3 my-5 flex-wrap pb-4">
-          <button type="button" class="btn btn-primary">
+        <h1 style={{ fontFamily: "Georgia" }} className="text-center">
+          <span className="border-4 border-bottom">Strength</span>
+        </h1>
+        <div className=" d-flex gap-3 my-5 flex-wrap pb-4 justify-content-center text-center">
+          <button type="button" className="btn btn-primary">
             Time Management
           </button>
 
-          <button type="button" class="btn btn-success">
+          <button type="button" className="btn btn-success">
             Self Motivated
           </button>
-          <button type="button" class="btn btn-danger">
+          <button type="button" className="btn btn-danger">
             Problem Solving
           </button>
         </div>

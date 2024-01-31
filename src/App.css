@@ -19,7 +19,14 @@
     width: 80%;
     left: 10%;
 }
-.navbar .nav-link:hover , #toggle:hover{
+
+.navbar .nav-link:hover,
+#toggle:hover {
     color: blueviolet;
 }
 
+
+.navbar-nav a:focus {
+    color: blueviolet;
+    /* font-weight: bold; */
+}
