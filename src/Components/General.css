@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(236, 234, 234);
+}
+
+.code {
+    color: transparent;
+    transition: color 0.3s ease-out;
+}
+
+.card-footer:hover .code {
+    color: #ff7f50;
+}
+
+a {
+    text-decoration: none;
+    color: #37475A;
+    font-weight: 500;
+}
+
+.h-7 {
+    width: 1.75rem;
+}
+
+form {
+    width: 35vw;
+    max-width: 500px;
+    min-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 3rem;
+    background-color: #faf6f6;
+    border: 1px solid transparent;
+    color: black;
+    padding: 5px 1rem;
+}
+
+.send{
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    background: #EC5B53;
+    color: white;
+    border: 3px solid transparent;
+}

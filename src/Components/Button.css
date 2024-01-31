@@ -1,0 +1,11 @@
+/* Skill */ 
+
+.skill:hover{
+    background-color: blueviolet;
+    opacity: 0.9;
+    color:white
+}
+.skill{
+    background-color: rgb(230, 224, 222);
+    /* rgb(247, 244, 243) */
+}
