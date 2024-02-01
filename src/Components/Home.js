@@ -70,7 +70,7 @@ function Home() {
     <>
       <About />
       <div className="skill-section container my-5  p-5">
-        <h1 className="mb-5 pb-3 text-center" style={{ fontFamily: "Georgia" }}>
+        <h1 className="my-5 pb-3 text-center" style={{ fontFamily: "Georgia" }}>
           <span className="border-4 border-bottom">The Skills I Have</span>
         </h1>
         <div className="row row-cols-1 row-cols-md-3 g-5">
@@ -85,7 +85,7 @@ function Home() {
           <span className="border-4 border-bottom">Strength</span>
         </h1>
         <div className=" d-flex gap-3 my-5 flex-wrap pb-4 justify-content-center text-center">
-          <button type="button" className="btn btn-primary">
+          <button type="button" className="btn btn-primary p-2">
             Time Management
           </button>
 

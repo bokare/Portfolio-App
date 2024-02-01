@@ -1,8 +1,8 @@
 /* Skill */ 
 
 .skill:hover{
-    background-color: blueviolet;
-    opacity: 0.9;
+    background-color: #FF7C4C;
+    opacity: 1;
     color:white
 }
 .skill{

@@ -7,6 +7,11 @@ import "../App.css";
 const Navbar = () => {
   const theme = useSelector((state) => state.theme);
   const dispatch = useDispatch();
+  document.body.style.color = theme == "dark" ? "white" : "#36296A";
+  document.body.style.background =
+    theme == "dark"
+      ? "linear-gradient(to right bottom, #b94177, rgb(109, 65, 165) , #120078)"
+      : "#EEEEEE";
 
   console.log(theme);
   const resumeFileName = "resume.pdf";
@@ -15,9 +20,16 @@ const Navbar = () => {
     <nav
       className="navbar navbar-expand-lg bg-body-tertiary p-0 "
       data-bs-theme={`${theme}`}
-      style={{ fontSize: "1.3rem" ,position:"sticky", width:"100%" ,top:"0" ,zIndex:"5" ,}}
+      style={{
+        fontSize: "1.3rem",
+        position: "sticky",
+        width: "100%",
+        top: "0",
+        zIndex: "5",
+
+      }}
     >
-      <div className="container-fluid" style={{backgroundColor:""}}>
+      <div className="container-fluid" style={{ backgroundColor: theme == "light" ? "rgb(226, 223, 215)":"#1B2F3C"  }}>
         <Link className="navbar-brand px-4" to="/">
           <img
             src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706381806/xxnnvbzwceaz8vdglkh9.jpg"
@@ -27,7 +39,12 @@ const Navbar = () => {
           />
           <span
             className="font-monospace align-middle m-1 px-2 "
-            style={{ letterSpacing: "0.3rem" ,fontSize:"1.3rem"  ,fontWeight:"600" ,color:""}}
+            style={{
+              letterSpacing: "0.3rem",
+              fontSize: "1.3rem",
+              fontWeight: "600",
+              color: "",
+            }}
           >
             PORTFOLIO
           </span>
@@ -46,7 +63,7 @@ const Navbar = () => {
         <div
           className="collapse navbar-collapse px-3"
           id="navbarSupportedContent"
-          style={{fontWeight:"400"}}
+          style={{ fontWeight: "400" }}
         >
           <ul className="navbar-nav ms-auto  mb-lg-0m px-2 p-3">
             <li className="nav-item" activeClassName="active">
@@ -87,7 +104,11 @@ const Navbar = () => {
               {theme === "light" ? (
                 <i className="fa-solid fa-moon"></i>
               ) : (
-                <i id="sun" className="fa-solid fa-sun" style={{ color: "white" }}></i>
+                <i
+                  id="sun"
+                  className="fa-solid fa-sun"
+                  style={{ color: "white" }}
+                ></i>
               )}
             </li>
           </ul>

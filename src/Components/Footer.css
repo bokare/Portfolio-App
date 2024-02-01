@@ -17,7 +17,7 @@ footer{
 }
 
 .foot-panel2{
-    background-color: #222f3d;
+    background: linear-gradient(to right bottom , #222F3D,#365463,#419255);
     color: #e7ecf1;
     min-height: 70vh;
     display: flex;
@@ -55,7 +55,7 @@ footer ul a{
 
 
 .foot-panel4{
-    background-color: #2B3035;
+    background-color: #2a2e32;
     color: white;
     height: 80px;
     text-align: center;

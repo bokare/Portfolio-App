@@ -13,7 +13,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #37475A;
+    color: inherit;
     font-weight: 500;
 }
 

@@ -38,7 +38,7 @@ function Education() {
               id="panelsStayOpen-collapseOne"
               className="accordion-collapse collapse show"
             >
-              <div className="accordion-body p-4">
+              <div className="accordion-body p-4" style={{backgroundColor:"#ececec"}}>
                 <a
                   href="https://mescoe.mespune.org/"
                   target="_blank"
@@ -48,21 +48,21 @@ function Education() {
                     Modern Education Society's Wadia College of Engineering Pune.
                   </h5>
                 </a>
-                <p>
-                  <h6>📍 cgpa : 8.1</h6>
+                <p >
+                  <h5>📍 cgpa : 8.1</h5>
                 </p>
-                <p>
+                <p style={{fontSize:"1.2rem"}} >
                   📍 I have studied basic software engineering subjects like
                   java, javaScript Data Structures, Algorithms, DBMS, OOPS, etc.
                 </p>
-                <p>
+                <p style={{fontSize:"1.2rem"}}>
                   📍 Apart from this, I have done courses on React, Front End
                   Development, Backend Development from various platforms .
                 </p>
               </div>
             </div>
           </div>
-          <div className="accordion-item">
+          <div className="accordion-item" style={{backgroundColor:"#ececec"}}>
             <h2 className="accordion-header">
               <button
                 className="accordion-button collapsed p-3 d-block"
@@ -91,12 +91,12 @@ function Education() {
                   <h5>Yeshwant Mahavidyalaya, Nanded.</h5>
                 </a>
                 <p className="my-2 pt-2">
-                  <h6>📍percentage : 76.46</h6>
+                  <h5>📍percentage : 76.46</h5>
                 </p>
               </div>
             </div>
           </div>
-          <div className="accordion-item">
+          <div className="accordion-item" style={{backgroundColor:"#ececec"}}>
             <h2 className="accordion-header">
               <button
                 className="accordion-button collapsed p-3 d-block"
@@ -119,7 +119,7 @@ function Education() {
               <div className="accordion-body py-5">
                 <h5 style={{color: "#7B48A6" }}>Shahid Bhagatsingh High School Bajajngar, Sambhajinagar.</h5>
                 <p className="my-2 pt-2">
-                  <h6>📍percentage : 90.00</h6>
+                  <h5>📍percentage : 90.00</h5>
                 </p>
               </div>
             </div>
