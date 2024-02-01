@@ -20,7 +20,7 @@ function Contacts() {
         <div className="contact d-flex container my-5 px-5 gap-4 justify-content-around flex-wrap">
           <div>
             <div>
-              <a href="https://github.com/bokare" target="_blank">
+              <a href="https://github.com/bokare" target="_blank" rel="noreferrer">
                 <img
                   src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706696673/samples/github.png"
                   className="h-7 mr-3 pb-3"
@@ -38,6 +38,7 @@ function Contacts() {
               <a
                 href="https://www.linkedin.com/feed/?trk=404_page"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706696931/samples/linkedin.png"
@@ -59,6 +60,7 @@ function Contacts() {
               <a
                 href="https://twitter.com/i/flow/login?redirect_after_login=%2FVaibhav_b_patil"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706697111/samples/twiter.png"
@@ -119,7 +121,7 @@ function Contacts() {
           </p>
           <div>
             <form method="" action="">
-              <label for="first-name">
+              <label htmlFor="first-name">
                 <input
                   id="first-name"
                   name="first-name"
@@ -128,7 +130,7 @@ function Contacts() {
                   required
                 />
               </label>
-              <label for="email">
+              <label htmlFor="email">
                 <input
                   id="email"
                   name="email"

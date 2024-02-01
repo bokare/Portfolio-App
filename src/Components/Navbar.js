@@ -7,13 +7,12 @@ import "../App.css";
 const Navbar = () => {
   const theme = useSelector((state) => state.theme);
   const dispatch = useDispatch();
-  document.body.style.color = theme == "dark" ? "white" : "#36296A";
+  document.body.style.color = theme === "dark" ? "white" : "#36296A";
   document.body.style.background =
-    theme == "dark"
+    theme === "dark"
       ? "linear-gradient(to right bottom, #b94177, rgb(109, 65, 165) , #120078)"
       : "#EEEEEE";
 
-  console.log(theme);
   const resumeFileName = "resume.pdf";
   const resumeUrl = process.env.PUBLIC_URL + "/" + resumeFileName;
   return (
@@ -29,7 +28,7 @@ const Navbar = () => {
 
       }}
     >
-      <div className="container-fluid" style={{ backgroundColor: theme == "light" ? "rgb(226, 223, 215)":"#1B2F3C"  }}>
+      <div className="container-fluid" style={{ backgroundColor: theme === "light" ? "rgb(226, 223, 215)":"#1B2F3C"  }}>
         <Link className="navbar-brand px-4" to="/">
           <img
             src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706381806/xxnnvbzwceaz8vdglkh9.jpg"
@@ -66,33 +65,33 @@ const Navbar = () => {
           style={{ fontWeight: "400" }}
         >
           <ul className="navbar-nav ms-auto  mb-lg-0m px-2 p-3">
-            <li className="nav-item" activeClassName="active">
+            <li className="nav-item">
               <Link className="nav-link " aria-current="page" to="/">
                 Home
               </Link>
             </li>
-            <li className="nav-item" activeClassName="active">
+            <li className="nav-item" >
               <Link className="nav-link" to="/education">
                 Education
               </Link>
             </li>
-            <li className="nav-item" activeClassName="active">
+            <li className="nav-item" >
               <Link className="nav-link" to="/projects">
                 Projects
               </Link>
             </li>
-            <li className="nav-item" activeClassName="active">
+            <li className="nav-item" >
               <Link className="nav-link" to="/achievements">
                 Achievements
               </Link>
             </li>
-            <li className="nav-item" activeClassName="active">
+            <li className="nav-item" >
               <Link className="nav-link" to="/contacts">
                 Contacts
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={resumeUrl} target="_blank">
+              <a className="nav-link" href={resumeUrl} target="_blank" rel="noreferrer" >
                 Resume
               </a>
             </li>

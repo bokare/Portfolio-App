@@ -85,14 +85,14 @@ function Home() {
           <span className="border-4 border-bottom">Strength</span>
         </h1>
         <div className=" d-flex gap-3 my-5 flex-wrap pb-4 justify-content-center text-center">
-          <button type="button" className="btn btn-primary p-2">
+          <button type="button" className="btn btn-primary py-2 px-3">
             Time Management
           </button>
 
-          <button type="button" className="btn btn-success">
+          <button type="button" className="btn btn-success py-2 px-3">
             Self Motivated
           </button>
-          <button type="button" className="btn btn-danger">
+          <button type="button" className="btn btn-danger py-2 px-3">
             Problem Solving
           </button>
         </div>
