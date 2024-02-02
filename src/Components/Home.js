@@ -2,6 +2,7 @@ import "./Button.css";
 import Skill from "./Skill";
 import About from "./About";
 
+
 function Home() {
   const skills = [
     {
@@ -70,10 +71,10 @@ function Home() {
     <>
       <About />
       <div className="skill-section container my-5  p-5">
-        <h1 className="my-5 pb-3 text-center" style={{ fontFamily: "Georgia" }}>
+        <h1 className="my-5 pb-5 text-center skill-heading" style={{ fontFamily: "Georgia", }}>
           <span className="border-4 border-bottom">The Skills I Have</span>
         </h1>
-        <div className="row row-cols-1 row-cols-md-3 g-5">
+        <div className="row row-cols-1 row-cols-md-3 g-5 ">
           {skills.map((item) => (
             <Skill key={item.title} skill={item} />
           ))}

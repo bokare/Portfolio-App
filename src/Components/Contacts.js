@@ -11,7 +11,7 @@ function Contacts() {
           Get In Touch
         </p>
         <p
-          className="container text-justify my-5 px-5"
+          className="container text-justify my-5 px-5 message"
           style={{ fontSize: "1.5rem", maxWidth: "1200px" }}
         >
           I am available on almost every social media. You can message me, I

@@ -8,8 +8,8 @@ function Footer() {
         <Link to="#">Back To Top</Link>
       </div> */}
 
-      <div className="foot-panel2">
-        <Link className="navbar-brand px-4 text-center" to="/">
+      <div className="foot-panel2 py-5">
+        <Link className="navbar-brand px-4 text-center  footer-logo" to="/">
           <img
             src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706381806/xxnnvbzwceaz8vdglkh9.jpg"
             alt="Bootstrap"
@@ -17,13 +17,13 @@ function Footer() {
             height="60"
           />
           <div
-            className="font-monospace align-bottom my-3 logo"
+            className="font-monospace  my-3"
             style={{ letterSpacing: "0.4em" ,fontSize:"1.5rem"  ,fontWeight:"600" ,color:"#E5EEF6"}}
           >
               PORTFOLIO
           </div>
         </Link>
-        <ul>
+        <ul className="links">
           <h2>Useful Links</h2>
           <Link to="/">Home</Link>
           <Link to="/education">Education</Link>
@@ -52,7 +52,7 @@ function Footer() {
             Gmail
           </Link>
           <Link to="tel:+9561157845" target="_blank">
-            Teleohone
+            Telephone
           </Link>
         </ul>
       </div>

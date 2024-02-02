@@ -5,8 +5,8 @@ function Achievements() {
     <>
       <div className="">
         <div
-          className="container p-4 text-center py-5"
-          style={{ maxWidth: "800px", fontSize: "1.2rem" }}
+          className="container p-4 text-center py-5 certi-head"
+          style={{ maxWidth: "800px", fontSize: "1.3rem" }}
         >
           <h1 className="py-3" style={{ fontFamily: "Georgia" }}>
             <span className="border-4 border-bottom">

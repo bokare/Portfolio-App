@@ -9,3 +9,10 @@
     background-color: rgb(230, 224, 222);
     /* rgb(247, 244, 243) */
 }
+@media (max-width: 990px) and (min-width:800px){
+    
+    .skill-heading{
+        /* margin-top: minmax(auto 150px) !important; */
+        padding-bottom: 120px !important;
+    }
+}

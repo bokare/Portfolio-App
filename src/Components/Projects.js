@@ -86,17 +86,17 @@ function Projects() {
 
   return (
     <>
-      <section className="container my-4  p-5" style={{backgroundColor:""}}>
+      <section className="container my-4 py-5 px-3" style={{backgroundColor:""}}>
         <h1
           className="text-center my-3 "
-          style={{ fontFamily: "Raleway", fontWeight: 700 }}
+          style={{ fontFamily: "Raleway", fontWeight: 700 ,lineHeight:"2.5rem"}}
         >
-          <span className="border-4 border-bottom pb-1">
+          <span className="border-4 border-bottom mb-2 ">
             These are some of my projects
           </span>
         </h1>
 
-        <div className="row row-cols-1 row-cols-md-3 g-5 my-5 pb-3">
+        <div className="row row-cols-1  row-cols-lg-3 row-cols-md-2  g-5 my-5 pb-3">
           {projects.map((item) => (
             <div key={item.title}>
               <Project item={item} />

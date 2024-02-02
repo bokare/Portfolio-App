@@ -1,6 +1,7 @@
 import Button from "./Button";
-import { faMonero } from "@fortawesome/free-brands-svg-icons";
-import { useDispatch, useSelector } from "react-redux";
+import "../App.css";
+// import { faMonero } from "@fortawesome/free-brands-svg-icons";
+import {useSelector } from "react-redux";
 
 function About() {
   const imgStyle = {
@@ -14,11 +15,12 @@ function About() {
   };
   const theme = useSelector((state) => state.theme);
   let imgurl =
-    theme == "dark"
+    theme === "dark"
       ? "https://res.cloudinary.com/dyzdwawer/image/upload/v1706729099/samples/about%20dark.jpg"
       : "https://res.cloudinary.com/dyzdwawer/image/upload/v1706510551/homebg.jpg";
 
   return (
+    <div id="about">
     <div className="card " style={imgStyle}>
       <img
         src={imgurl}
@@ -27,8 +29,8 @@ function About() {
         style={{ height: "88vh", width: "100%", objectFit: "cover" }}
       />
       <div
-        className="card-img-overlay px-4 container mb-5"
-        style={{ color: theme == "dark" ? "white" : "black" }}
+        className="card-img-overlay px-4 container mb-5 py-5"
+        style={{ color: theme === "dark" ? "white" : "black" }}
       >
         <h1 className="card-title display-2 mt-5 mb-1"> I'm Developer</h1>
         <h1 className="card-title display-2 mb-4">Vaibhav Bokare</h1>
@@ -43,7 +45,7 @@ function About() {
         </h3>
         <Button text="Hire Me" />
       </div>
-    </div>
+    </div></div>
   );
 }
 

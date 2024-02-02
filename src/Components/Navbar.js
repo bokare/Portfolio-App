@@ -25,11 +25,15 @@ const Navbar = () => {
         width: "100%",
         top: "0",
         zIndex: "5",
-
       }}
     >
-      <div className="container-fluid" style={{ backgroundColor: theme === "light" ? "rgb(226, 223, 215)":"#1B2F3C"  }}>
-        <Link className="navbar-brand px-4" to="/">
+      <div
+        className="container-fluid navbar-desk"
+        style={{
+          backgroundColor: theme === "light" ? "rgb(226, 223, 215)" : "#1B2F3C",
+        }}
+      >
+        <Link className="navbar-brand px-2 py-2" to="/">
           <img
             src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706381806/xxnnvbzwceaz8vdglkh9.jpg"
             alt="Bootstrap"
@@ -37,13 +41,8 @@ const Navbar = () => {
             height="40"
           />
           <span
+            id="logo"
             className="font-monospace align-middle m-1 px-2 "
-            style={{
-              letterSpacing: "0.3rem",
-              fontSize: "1.3rem",
-              fontWeight: "600",
-              color: "",
-            }}
           >
             PORTFOLIO
           </span>
@@ -60,7 +59,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className="collapse navbar-collapse px-3"
+          className="collapse navbar-collapse"
           id="navbarSupportedContent"
           style={{ fontWeight: "400" }}
         >
@@ -70,28 +69,33 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li className="nav-item" >
+            <li className="nav-item">
               <Link className="nav-link" to="/education">
                 Education
               </Link>
             </li>
-            <li className="nav-item" >
+            <li className="nav-item">
               <Link className="nav-link" to="/projects">
                 Projects
               </Link>
             </li>
-            <li className="nav-item" >
+            <li className="nav-item">
               <Link className="nav-link" to="/achievements">
                 Achievements
               </Link>
             </li>
-            <li className="nav-item" >
+            <li className="nav-item">
               <Link className="nav-link" to="/contacts">
                 Contacts
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href={resumeUrl} target="_blank" rel="noreferrer" >
+              <a
+                className="nav-link"
+                href={resumeUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Resume
               </a>
             </li>

@@ -14,7 +14,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .h-7 {
@@ -55,4 +55,27 @@ textarea {
     color: white;
     border: 3px solid transparent;
 }
+.project-card .card-img-top{
+    height: 280px;
+}
 
+
+
+@media (max-width: 990px) and (min-width:800px) {
+    .certi-head{
+        font-size:1.5rem !important;
+    }
+    .message{
+        padding:25px 100px !important;
+    }
+
+    .project-card .card-img-top{
+        height: 280px;
+    }
+    
+    
+}
+
+.project-card{
+    min-height: fit-content;
+}

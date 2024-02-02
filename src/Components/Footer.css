@@ -1,51 +1,40 @@
-footer{
+footer {
     margin-top: 20px;
 }
 
-.foot-panel1{
-    background-color: #37475a;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.85rem;
-   
-}
-.foot-panel1 a{
-    color: white;
-    text-decoration: none;
-}
-
-.foot-panel2{
-    background: linear-gradient(to right bottom , #222F3D,#365463,#419255);
+.foot-panel2 {
+    background: linear-gradient(to right bottom, #222F3D, #365463, #419255);
     color: #e7ecf1;
     min-height: 70vh;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    padding:5vh 10%;
-    gap:3%;
+    padding: 5vh 10%;
+    gap: 3%;
 
 }
-.foot-panel2 h2{
+
+.foot-panel2 h2 {
     margin-bottom: 4vh;
     margin-top: 5vh;
 }
 
-.foot-panel2 a{
+.foot-panel2 a {
     font-size: 1.1rem;
     word-spacing: 0.1em;
 }
-.foot-panel2 a:hover{
-    color:blueviolet
-}
-footer ul{
-    margin-top: 20px;
-    margin:0 5%;
+
+.foot-panel2 a:hover {
+    color: blueviolet
 }
 
-footer ul a{
+footer ul {
+    margin-top: 20px;
+    margin: 0 5%;
+}
+
+footer ul a {
     color: #dddddd;
     display: block;
     text-decoration: none;
@@ -54,15 +43,34 @@ footer ul a{
 }
 
 
-.foot-panel4{
+.foot-panel4 {
     background-color: #2a2e32;
     color: white;
-    height: 80px;
+    min-height: 70px;
     text-align: center;
-    padding: 25px 10% ;
+    padding: 25px 8%;
 }
 
 .foot-panel2::after {
     content: "";
     width: 350px;
-  }
+}
+
+.footer-logo {
+    align-self: center;
+}
+
+@media (max-width: 990px) and (min-width:800px) {
+    .foot-panel2 {
+        min-height: 40vh;
+        padding-top: 80px !important;
+    }
+    .footer-logo{
+        width: 100%;
+    }
+    .foot-panel2 h2 {
+        margin-bottom: 3vh;
+        margin-top: 2vh;
+    }
+    
+}

@@ -5,7 +5,7 @@ function Skill({ skill }) {
     <div className="col-lg-4 col-md-6 col-12 text-center">
       <div
         className="skill card d-flex flex-direction-column p-4 justify-content-around"
-        style={{ minHeight: "300px" ,maxHeight:"300px" }}
+        style={{ minHeight: "300px" ,maxHeight:"350px" }}
       >
         <img
           src={skill.imgurl}
