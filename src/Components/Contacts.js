@@ -1,6 +1,36 @@
 import Button from "./Button";
 import "./General.css";
+import React, { useRef ,useState} from "react";
+import emailjs from "@emailjs/browser";
+
 function Contacts() {
+  const form = useRef();
+  const [alert, setAlert] = useState(null);
+  const sendEmail = (e) => {
+    e.preventDefault();
+    
+
+    emailjs
+      .sendForm(process.env.REACT_APP_SERVICEID, process.env.REACT_APP_TEMPLATEID, form.current, {
+        publicKey: process.env.REACT_APP_PUBLICKEY,
+      })
+      .then(
+        () => {
+          setAlert("success");
+          setTimeout(() => {
+            setAlert(null);
+          }, 2000);
+        },
+        (error) => {
+          setAlert("fail");
+          setTimeout(() => {
+            setAlert(null);
+          }, 2000);
+        }
+      );
+
+      form.current.reset();
+  };
   return (
     <>
       <div className="pb-5">
@@ -20,7 +50,11 @@ function Contacts() {
         <div className="contact d-flex container my-5 px-5 gap-4 justify-content-around flex-wrap">
           <div>
             <div>
-              <a href="https://github.com/bokare" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/bokare"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706696673/samples/github.png"
                   className="h-7 mr-3 pb-3"
@@ -49,7 +83,6 @@ function Contacts() {
                   className="d-inline-block px-2 align-middle"
                   style={{
                     fontSize: "1.50rem",
-                    
                   }}
                 >
                   LinkedIn
@@ -107,8 +140,8 @@ function Contacts() {
           </div>
         </div>
       </div>
-      <hr style={{width:"80%" ,margin:"0 auto"}}></hr>
-      <div className="pt-5" style={{  }}>
+      <hr style={{ width: "80%", margin: "0 auto" }}></hr>
+      <div className="pt-5" style={{}}>
         <div
           className="container my-5 d-flex gap-5 flex-wrap justify-content-around px-5"
           style={{ maxWidth: "1200px" }}
@@ -120,7 +153,7 @@ function Contacts() {
             Let’s Work Together!
           </p>
           <div>
-            <form method="" action="">
+            <form ref={form} onSubmit={sendEmail}>
               <label htmlFor="first-name">
                 <input
                   id="first-name"
@@ -151,7 +184,20 @@ function Contacts() {
                 Send
               </button>
             </form>
+            {alert && (
+            <div
+              className={`alert alert-${alert==="success"?"success":"danger"} alert-dismissible fade show`}
+              role="alert"
+            >
+              {alert === "success" ? (
+                <strong>Send message to owner of this App.</strong>
+              ) : (
+                <strong>Failed to Send message.</strong>
+              )}
+            </div>
+          )}
           </div>
+          
         </div>
       </div>
     </>
