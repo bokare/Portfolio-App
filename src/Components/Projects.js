@@ -7,7 +7,7 @@ function Projects() {
       title: "Random Quotes",
       link: "https://random-quote-system.vercel.app",
       imgurl:
-        "https://res.cloudinary.com/dyzdwawer/image/upload/v1708527863/samples/projects%20thumbnail/random_quote.png",
+        "https://res.cloudinary.com/dyzdwawer/image/upload/v1708541848/samples/projects%20thumbnail/random%20quote.png",
       codelink: "https://github.com/bokare/Random-Quote-System",
       technologys: [
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528087/samples/technology%20photos/html.png",
