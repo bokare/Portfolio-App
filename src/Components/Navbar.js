@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { changeTheme } from "../store/store";
 import "../App.css";
-import mylogo from "../assets/transparent-logo.png"
+import mylogo from "../assets/transparent-logo.png";
 
 const Navbar = () => {
   const theme = useSelector((state) => state.theme);
   const dispatch = useDispatch();
+  const navbarCollapseRef = useRef();
+
   document.body.style.color = theme === "dark" ? "white" : "#36296A";
   document.body.style.background =
     theme === "dark"
@@ -16,6 +18,18 @@ const Navbar = () => {
 
   const resumeFileName = "resume.pdf";
   const resumeUrl = process.env.PUBLIC_URL + "/" + resumeFileName;
+
+  const closeNavbar = () => {
+    if (navbarCollapseRef.current.classList.contains("show")) {
+      navbarCollapseRef.current.classList.remove("show");
+    }
+  };
+
+  const toggleClick = ()=>{
+    dispatch(changeTheme())
+    closeNavbar()
+  }
+
   return (
     <nav
       className="navbar navbar-expand-lg bg-body-tertiary p-0 "
@@ -58,38 +72,44 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
+          ref={navbarCollapseRef}
           className="collapse navbar-collapse"
           id="navbarSupportedContent"
           style={{ fontWeight: "400" }}
         >
           <ul className="navbar-nav ms-auto  mb-lg-0m px-2 p-3">
             <li className="nav-item">
-              <Link className="nav-link " aria-current="page" to="/">
+              <Link
+                className="nav-link "
+                aria-current="page"
+                to="/"
+                onClick={closeNavbar}
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/education">
+              <Link className="nav-link" to="/education" onClick={closeNavbar}>
                 Education
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/projects">
+              <Link className="nav-link" to="/projects" onClick={closeNavbar}>
                 Projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/experience">
+              <Link className="nav-link" to="/experience" onClick={closeNavbar}>
                 Experience
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/achievements">
+              <Link className="nav-link" to="/achievements" onClick={closeNavbar}>
                 Achievements
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contacts">
+              <Link className="nav-link" to="/contacts" onClick={closeNavbar}>
                 Contacts
               </Link>
             </li>
@@ -99,6 +119,7 @@ const Navbar = () => {
                 href={resumeUrl}
                 target="_blank"
                 rel="noreferrer"
+                onClick={closeNavbar}
               >
                 Resume
               </a>
@@ -106,7 +127,8 @@ const Navbar = () => {
             <li
               id="toggle"
               className="nav-item  my-auto d-block px-2"
-              onClick={() => dispatch(changeTheme())}
+              // onClick={() => dispatch(changeTheme())}
+              onClick={toggleClick}
             >
               {theme === "light" ? (
                 <i className="fa-solid fa-moon"></i>

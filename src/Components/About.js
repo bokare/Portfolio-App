@@ -39,7 +39,7 @@ function About() {
         <h1 className="card-title display-2 mt-5 mb-1"> I'm Developer</h1>
         <h1 className="card-title display-2 mb-4">Vaibhav Bokare</h1>
         <h3
-          className="card-text px-2 mb-5 "
+          className="card-text px-2 mb-3"
           style={{ textAlign: "justify" }}
         >
           I am a Software engineer completed my graduation in
