@@ -22,9 +22,9 @@ a {
 }
 
 form {
-    width: 35vw;
+    /* width: 35vw; */
     max-width: 500px;
-    min-width: 350px;
+    /* min-width: 350px; */
     margin: 0 auto;
     padding-bottom: 2em;
 }

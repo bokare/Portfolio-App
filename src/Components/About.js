@@ -33,13 +33,13 @@ function About() {
         style={{ height: "88vh", width: "100%", objectFit: "cover" }}
       />
       <div
-        className="card-img-overlay px-4 container mb-5 py-5"
+        className="card-img-overlay px-4 container mb-5 "
         style={{ color: theme === "dark" ? "white" : "black" }}
       >
         <h1 className="card-title display-2 mt-5 mb-1"> I'm Developer</h1>
         <h1 className="card-title display-2 mb-4">Vaibhav Bokare</h1>
         <h3
-          className="card-text px-2 mb-5 pb-2"
+          className="card-text px-2 mb-5 "
           style={{ textAlign: "justify" }}
         >
           I am a Software engineer completed my graduation in

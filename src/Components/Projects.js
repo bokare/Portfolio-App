@@ -120,7 +120,7 @@ function Projects() {
           </span>
         </h1>
 
-        <div className="row row-cols-1  row-cols-lg-3 row-cols-md-2  g-5 my-5 pb-3">
+        <div className="row row-cols-1  row-cols-lg-3 row-cols-md-2 gy-5 my-5 pb-3">
           {projects.map((item) => (
             <div key={item.title}>
               <Project item={item} />

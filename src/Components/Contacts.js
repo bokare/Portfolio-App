@@ -171,9 +171,9 @@ function Contacts() {
         </div>
       </div>
       <hr style={{ width: "80%", margin: "0 auto" }}></hr>
-      <div className="pt-5" style={{}}>
+      <div className="pt-5">
         <div
-          className="container my-5 d-flex gap-5 flex-wrap justify-content-around px-5"
+          className="container my-5 d-flex gap-5 flex-wrap justify-content-around "
           style={{ maxWidth: "1200px" }}
         >
           <p
@@ -182,7 +182,7 @@ function Contacts() {
           >
             Let’s Work Together!
           </p>
-          <div>
+          <div >
             <form ref={form} onSubmit={sendEmail}>
               <label htmlFor="first-name">
                 <input
