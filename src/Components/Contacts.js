@@ -1,19 +1,27 @@
-import Button from "./Button";
 import "./General.css";
-import React, { useRef ,useState} from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Link } from "react-router-dom";
 
 function Contacts() {
   const form = useRef();
   const [alert, setAlert] = useState(null);
+
+  const resumeFileName = "resume.pdf";
+  const resumeUrl = process.env.PUBLIC_URL + "/" + resumeFileName;
+
   const sendEmail = (e) => {
     e.preventDefault();
-    
 
     emailjs
-      .sendForm(process.env.REACT_APP_SERVICEID, process.env.REACT_APP_TEMPLATEID, form.current, {
-        publicKey: process.env.REACT_APP_PUBLICKEY,
-      })
+      .sendForm(
+        process.env.REACT_APP_SERVICEID,
+        process.env.REACT_APP_TEMPLATEID,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_PUBLICKEY,
+        }
+      )
       .then(
         () => {
           setAlert("success");
@@ -29,8 +37,9 @@ function Contacts() {
         }
       );
 
-      form.current.reset();
+    form.current.reset();
   };
+
   return (
     <>
       <div className="pb-5">
@@ -105,7 +114,7 @@ function Contacts() {
                   className="d-inline-block px-2 align-middle"
                   style={{ fontSize: "1.50rem" }}
                 >
-                  Twitter
+                  X (Twitter)
                 </p>
               </a>
             </div>
@@ -136,7 +145,28 @@ function Contacts() {
                 <p className="d-inline-block px-2"> bokarevk2001@gmail.com</p>
               </a>
             </h3>
-            <Button text="Resume" />
+            <Link to={resumeUrl} id="mylink" target="_blank">
+              <button
+                id="mybtn"
+                type="button"
+                className="btn px-5 py-2"
+                style={{
+                  backgroundColor: "#EC5B53",
+                  color: "white",
+                  fontSize: "1.2rem",
+                  transition: "background-color 0..5s ease-in-out",
+                }}
+                onMouseEnter={(e) =>
+                  (e.target.style.backgroundColor = "#581845")
+                }
+                onMouseLeave={(e) =>
+                  (e.target.style.backgroundColor = "#EC5B53")
+                }
+              >
+                Resume
+                <i className="fas fa-chevron-right px-2"></i>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -177,27 +207,37 @@ function Contacts() {
                 name="bio"
                 rows="3"
                 cols="40"
-                placeholder="YOUR MESSAGE"
+                placeholder="Your Message"
                 resize="verticle"
               ></textarea>
-              <button className="send" type="submit">
+              <button
+                className="send"
+                type="submit"
+                onMouseEnter={(e) =>
+                  (e.target.style.backgroundColor = "#581845")
+                }
+                onMouseLeave={(e) =>
+                  (e.target.style.backgroundColor = "#EC5B53")
+                }
+              >
                 Send
               </button>
             </form>
             {alert && (
-            <div
-              className={`alert alert-${alert==="success"?"success":"danger"} alert-dismissible fade show`}
-              role="alert"
-            >
-              {alert === "success" ? (
-                <strong>Send message to owner of this App.</strong>
-              ) : (
-                <strong>Failed to Send message.</strong>
-              )}
-            </div>
-          )}
+              <div
+                className={`alert alert-${
+                  alert === "success" ? "success" : "danger"
+                } alert-dismissible fade show`}
+                role="alert"
+              >
+                {alert === "success" ? (
+                  <strong>Send message to owner of this App.</strong>
+                ) : (
+                  <strong>Failed to Send message.</strong>
+                )}
+              </div>
+            )}
           </div>
-          
         </div>
       </div>
     </>

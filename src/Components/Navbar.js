@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { changeTheme } from "../store/store";
 import "../App.css";
+import mylogo from "../assets/transparent-logo.png"
 
 const Navbar = () => {
   const theme = useSelector((state) => state.theme);
@@ -35,15 +36,13 @@ const Navbar = () => {
       >
         <Link className="navbar-brand px-2 py-2" to="/">
           <img
-            src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706381806/xxnnvbzwceaz8vdglkh9.jpg"
+            // src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706381806/xxnnvbzwceaz8vdglkh9.jpg"
+            src={mylogo}
             alt="Bootstrap"
             width="50"
             height="40"
           />
-          <span
-            id="logo"
-            className="font-monospace align-middle m-1 px-2 "
-          >
+          <span id="logo" className="font-monospace align-middle m-1 px-2 ">
             PORTFOLIO
           </span>
         </Link>
@@ -77,6 +76,11 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/projects">
                 Projects
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/experience">
+                Experience
               </Link>
             </li>
             <li className="nav-item">

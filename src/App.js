@@ -9,6 +9,8 @@ import Achievements from "./Components/Achievements";
 import Contacts from "./Components/Contacts";
 import { Provider } from "react-redux";
 import {BrowserRouter,Route,Routes} from "react-router-dom";
+import Notfound from "./Components/Notfound";
+import Experience from "./Components/Experience";
 
 
 
@@ -23,8 +25,10 @@ function App() {
               <Route path="/" element={<Home />}></Route>
               <Route path="/education" element={<Education />}></Route>
               <Route path="/projects" element={<Projects />}></Route>
+              <Route path="/experience" element={<Experience />}></Route>
               <Route path="/achievements" element={<Achievements />}></Route>
               <Route path="/contacts" element={<Contacts />}></Route>
+              <Route path="*" element={<Notfound />} />
             </Routes>
           </div>
           <Footer />

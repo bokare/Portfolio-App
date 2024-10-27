@@ -2,6 +2,8 @@ import Button from "./Button";
 import "../App.css";
 // import { faMonero } from "@fortawesome/free-brands-svg-icons";
 import {useSelector } from "react-redux";
+import darkImage from "../assets/bg-dark.jpg";
+import lightImage from "../assets/bg-light.jpg";
 
 function About() {
   const imgStyle = {
@@ -14,10 +16,12 @@ function About() {
     fontFamily: "faMonero",
   };
   const theme = useSelector((state) => state.theme);
-  let imgurl =
-    theme === "dark"
-      ? "https://res.cloudinary.com/dyzdwawer/image/upload/v1706729099/samples/about%20dark.jpg"
-      : "https://res.cloudinary.com/dyzdwawer/image/upload/v1706510551/homebg.jpg";
+  // let imgurl =
+  //   theme === "dark"
+  //     ? "https://res.cloudinary.com/dyzdwawer/image/upload/v1706729099/samples/about%20dark.jpg"
+  //     : "https://res.cloudinary.com/dyzdwawer/image/upload/v1706510551/homebg.jpg";
+
+  let imgurl = theme === "dark" ? darkImage : lightImage;
 
   return (
     <div id="about">
@@ -38,7 +42,7 @@ function About() {
           className="card-text px-2 mb-5 pb-2"
           style={{ textAlign: "justify" }}
         >
-          I am a future Software enthusiast engineer completed my graduation in
+          I am a Software engineer completed my graduation in
           2023. Passionate about coding and it's potential, i am eager to
           contribute my expertise to optimized operation through Programming
           based solution.

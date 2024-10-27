@@ -1,6 +1,8 @@
 // import "./Projects.css";
 import Project from "./Project";
 import Button from "./Button";
+import drumMachine from "../assets/drumMachine.png";
+
 function Projects() {
   const projects = [
     {
@@ -13,7 +15,6 @@ function Projects() {
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528087/samples/technology%20photos/html.png",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528177/samples/technology%20photos/css.png",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528236/samples/technology%20photos/javascript.png",
-        ,
       ],
     },
     {
@@ -23,7 +24,7 @@ function Projects() {
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708537853/samples/projects%20thumbnail/todo.png",
       codelink: "https://github.com/bokare/Todo-List",
       technologys: [
-        "https://harshallportfolio.vercel.app/assets/react-h3aPdYU7.svg",
+        "https://res.cloudinary.com/dyzdwawer/image/upload/v1706540997/samples/react.png",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528087/samples/technology%20photos/html.png",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528236/samples/technology%20photos/javascript.png",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRld8EcXNHiLxenTYvUX0ReOMbbjIp5uqUOf6I79MSqxA&s",
@@ -37,9 +38,8 @@ function Projects() {
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708533940/samples/projects%20thumbnail/nutrition%20tracker.png",
       codelink: "https://github.com/bokare/Nutrition-App",
       technologys: [
-        "https://harshallportfolio.vercel.app/assets/react-h3aPdYU7.svg",
+        "https://res.cloudinary.com/dyzdwawer/image/upload/v1706540997/samples/react.png",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708534588/samples/technology%20photos/bootstrap.jpg",
-        "https://harshallportfolio.vercel.app/assets/js-bumRY2k2.png",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708533120/samples/technology%20photos/express.png",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708533614/samples/technology%20photos/mongodb.png",
       ],
@@ -51,20 +51,32 @@ function Projects() {
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708536076/samples/projects%20thumbnail/blog%20apps.png",
       codelink: "https://github.com/bokare/Timer-Clock",
       technologys: [
-        "https://harshallportfolio.vercel.app/assets/react-h3aPdYU7.svg",
+        "https://res.cloudinary.com/dyzdwawer/image/upload/v1706540997/samples/react.png",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528236/samples/technology%20photos/javascript.png",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528177/samples/technology%20photos/css.png",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708534588/samples/technology%20photos/bootstrap.jpg",
       ],
     },
+    // {
+    //   title: "Text Utils",
+    //   link: "https://text-utils-roan.vercel.app/addform",
+    //   imgurl:
+    //     "https://res.cloudinary.com/dyzdwawer/image/upload/v1708536891/samples/projects%20thumbnail/text%20utils.png",
+    //   codelink: "https://github.com/bokare/Text-Utils",
+    //   technologys: [
+    //     "https://harshallportfolio.vercel.app/assets/react-h3aPdYU7.svg",
+    //     "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528087/samples/technology%20photos/html.png",
+    //     "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528177/samples/technology%20photos/css.png",
+    //     "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528236/samples/technology%20photos/javascript.png",
+    //     "https://res.cloudinary.com/dyzdwawer/image/upload/v1708534588/samples/technology%20photos/bootstrap.jpg",
+    //   ],
+    // },
     {
-      title: "Text Utils",
-      link: "https://text-utils-roan.vercel.app/addform",
-      imgurl:
-        "https://res.cloudinary.com/dyzdwawer/image/upload/v1708536891/samples/projects%20thumbnail/text%20utils.png",
-      codelink: "https://github.com/bokare/Text-Utils",
+      title: "Drum Machine",
+      link: "https://drum-machine-puce.vercel.app",
+      imgurl: drumMachine,
+      codelink: "https://github.com/bokare/Drum-Machine",
       technologys: [
-        "https://harshallportfolio.vercel.app/assets/react-h3aPdYU7.svg",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528087/samples/technology%20photos/html.png",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528177/samples/technology%20photos/css.png",
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708528236/samples/technology%20photos/javascript.png",
@@ -74,7 +86,7 @@ function Projects() {
 
     {
       title: "Blog App",
-      link: "https://vaibhav-bokare-blog-l6p7vetv3-bokare.vercel.app/blogs",
+      link: "https://vaibhav-bokare-blog-app.vercel.app/blogs",
       imgurl:
         "https://res.cloudinary.com/dyzdwawer/image/upload/v1708538488/samples/projects%20thumbnail/backeng%20blogapp2.png",
       codelink: "https://github.com/bokare/Blog-App",

@@ -42,6 +42,7 @@ function Education() {
                 <a
                   href="https://mescoe.mespune.org/"
                   target="_blank"
+                  rel="noreferrer"
                   style={{ textDecoration: "none", color: "#7B48A6" }}
                 >
                   <h5>
@@ -86,6 +87,7 @@ function Education() {
                 <a
                   href="https://ymnnanded.in/"
                   target="_blank"
+                  rel="noreferrer"
                   style={{ textDecoration: "none", color: "#7B48A6" }}
                 >
                   <h5>Yeshwant Mahavidyalaya, Nanded.</h5>

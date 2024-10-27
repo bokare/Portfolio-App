@@ -16,7 +16,7 @@ function Achievements() {
           <div className="my-5 certi" style={{ color: "#36296A" }}>
             <div className="p-3 mb-2 bg-warning-subtle text-emphasis-warning">
               <a
-                href="https://www.hackerrank.com/certificates/4b5f18f0701d"
+                href="https://www.hackerrank.com/certificates/baec59be9122"
                 target="_blank"
                 rel="noreferrer"
               >

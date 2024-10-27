@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import mylogo from "../assets/transparent-logo.png"
+
+
 function Footer() {
   const resumeUrl = process.env.PUBLIC_URL + "/resume.pdf";
   return (
@@ -11,7 +14,8 @@ function Footer() {
       <div className="foot-panel2 py-5">
         <Link className="navbar-brand px-4 text-center  footer-logo" to="/">
           <img
-            src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706381806/xxnnvbzwceaz8vdglkh9.jpg"
+            // src="https://res.cloudinary.com/dyzdwawer/image/upload/v1706381806/xxnnvbzwceaz8vdglkh9.jpg"
+            src={mylogo}
             alt="Bootstrap"
             width="70"
             height="60"

@@ -31,6 +31,10 @@
     /* font-weight: bold; */
 }
 
+.underline{
+    border-bottom: 1px solid #36296A;
+}
+
 #logo {
     /* Default styles */
     letter-spacing: 0.3rem;
